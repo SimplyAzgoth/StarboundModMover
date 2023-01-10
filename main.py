@@ -1,32 +1,11 @@
+# Dynamic Starbound Mod Mover + Renamer
+# Made by SimplyAzgoth
+# https://steamcommunity.com/id/SimplyAzgoth/
 import requests
 import logging
 import json
 import sys
 import os
-
-
-# Dynamic Starbound Mod Mover + Renamer
-# Made by SimplyAzgoth
-# https://steamcommunity.com/id/SimplyAzgoth/
-#
-# Requires 'requests', enter the following in cmd/powershell:
-#   pip install requests
-#
-# Moves your starbound mods from the workshop directory into the starbound\mods directory
-# Uses the steam api to get the workshop titles of the mods and renames them to that.
-# Does not change the name of nonstandard pak files and instead preserves them while moving it.
-# Also supports unpacked folder mods and doesn't change the name of the folder (e.g. https://steamcommunity.com/sharedfiles/filedetails/?id=734399906)
-# Also supports mods with multiple .pak files in its workshop folder.
-# Only the 'contents.pak' or 'content.pak' files will have their name changed.
-#
-# Examples:
-#   731220462\contents.pak -> starbound\mods\Enhanced Storage.pak
-#   "{exampleID}\I don't like to follow naming convention.pak" -> starbound\mods\I don't like to follow naming convention.pak
-#   764887546\contents.pak  -> starbound\mods\Stardust Core.pak
-#             post.pak      -> starbound\mods\post.pak
-#
-# Only windows is supported right now, but it might work on linux
-# DISCLAIMER: I cannot guarantee this code is good or will even work for you at all. It worked for me though. I sorta got tired of working on it and just decided to post it after it worked for me.
 
 
 # ----CONFIG----
