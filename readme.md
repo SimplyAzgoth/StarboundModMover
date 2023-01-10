@@ -2,7 +2,6 @@
 By SimplyAzgoth (https://steamcommunity.com/id/SimplyAzgoth/)
 
 ## Description
-<hr>
 
 This script dynamically searches for mods in your starbound workshop folder and moves them to the starbound\mods folder while naming them after their workshop title.
 
@@ -18,9 +17,8 @@ Examples:
 - 764887546\post.pak -> starbound\mods\post.pak
 
 ## How to use
-<hr>
 
-Install 'requests' using pip:
+- Install 'requests' using pip:
  
 >pip install requests
 
@@ -32,5 +30,4 @@ Install 'requests' using pip:
 
 
 ## DISCLAIMER
-<hr>
 I am not that good of a coder. Please make an issue on here if you see one, and I'll try my best
