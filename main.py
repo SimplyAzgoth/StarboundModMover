@@ -94,7 +94,7 @@ logging.info("Finished loading mods")
 # making the api call
 logging.info(f"Making api call")
 try:
-    api_response_dict: dict = json.loads(requests.post(api_url, api_data).text)
+    api_response_dict: dict = json.loads(requests.post(api_url, api_data).text)["response"]
 except requests.ConnectionError as e:
     print("Errored while connecting to steam api. Check logs.")
     logging.critical(f"requests.ConnectionError -> Unable to connect to steam api -> {e}")
